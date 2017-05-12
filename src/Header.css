@@ -1,0 +1,66 @@
+.App-header {
+  background-color: steelblue;
+  height: 75px;
+  padding: 0px;
+  color: white;
+
+    /**
+   * Flexbox properties
+   */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.App-header h1 {
+    margin: 10px;
+}
+
+.App-header img {
+    margin: 10px;
+}
+
+.site-navigation ul {
+  background: #eee;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+    /**
+   * Flexbox properties
+   */
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-navigation a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+.site-navigation a:hover {
+  background: #d4d4d4;
+}
+
+@media all and (max-width: 650px) {
+  .App-header {
+    /**
+     * Full width navigation items
+     */
+    /*flex-flow: column wrap;*/
+    padding: 0;
+    height: 150px;
+  }
+  
+  .site-navigation ul {
+    /**
+     * Full width navigation items
+     */
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+

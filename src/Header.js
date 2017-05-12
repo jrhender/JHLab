@@ -1,16 +1,19 @@
 import React from 'react';
-// import logo from './logo.svg';
+import './Header.css';
+import jhFace from './John-Face.png';
 
 const Header = (props) => {
     return (
-        <div className="App-header FBoxContainer">
-            <div className="box">
-                <h2>JH Personal Site</h2>
-            </div>
-            <div className="box">
-                <h2>Welcome to React</h2>
-                {/*<img src={logo} className="App-logo" alt="logo" />*/}
-            </div>
+        <div className="App-header">
+            <img src={jhFace} alt="logo" />
+            <h1>JH Code Lab</h1>
+            <nav className="site-navigation">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </nav>
         </div>
     )
 }
