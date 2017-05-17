@@ -1,12 +1,11 @@
 import React from 'react';
-//import './Projects.css';
-import jhFace from './John-Face.png';
+import './Project.css';
 
 const Project = (props) => {
     return (
-        <div>
-            {/*<h3>#{props.projectNumber}</h3>*/}
+        <div className="Project">
             <h2>#{props.projectNumber} : {props.projectName}</h2>
+            <p>{props.projectDescription}</p>
         </div>
     )
 }
