@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import './Header.css';
 import jhFace from './John-Face.png';
 
@@ -11,9 +16,8 @@ const Header = (props) => {
             </div>
             <nav className="site-navigation">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
                 </ul>
             </nav>
         </div>

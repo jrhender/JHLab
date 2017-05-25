@@ -21,6 +21,18 @@
     margin: 10px;
 }
 
+ .App-header nav {
+    flex: 1;
+    height: 100%;
+ }
+
+ .App-header #LogoAndName {
+    flex-grow: 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ }
+
 .site-navigation ul {
   background: #eee;
   list-style: none;
@@ -47,18 +59,6 @@
 .site-navigation a:hover {
   background: #d4d4d4;
 }
-
- .App-header nav {
-    flex: 1;
-    height: 100%;
- }
-
- .App-header #LogoAndName {
-    flex-grow: 2;
-    display:flex;
-    align-items: center;
-    justify-content: center;
- }
 
 @media all and (max-width: 525px) {
   .App-header {
