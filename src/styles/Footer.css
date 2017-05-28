@@ -1,0 +1,19 @@
+.App-footer {
+  background-color: steelblue;
+  height: 50px;
+  padding: 5px;
+  color: white;
+
+      /**
+   * Flexbox properties
+   */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.twitter-logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}

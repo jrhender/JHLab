@@ -1,11 +1,7 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-import './Header.css';
-import jhFace from './John-Face.png';
+import {Link} from 'react-router-dom';
+import './../styles/Header.css';
+import jhFace from './../images/John-Face.png';
 
 const Header = (props) => {
     return (
