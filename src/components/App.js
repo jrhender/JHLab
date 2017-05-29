@@ -8,6 +8,7 @@ import './../styles/App.css';
 import Header from './../components/Header.js';
 import Footer from './../components/Footer.js';
 import Projects from './../components/Projects.js';
+import Resume from './../components/Resume.js';
 import Home from './Home.js';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/projects" component={Projects}/>
+            <Route path="/resume" component={Resume}/>
             <Route component={NotFound}/>
           </Switch>
           <Footer/>
