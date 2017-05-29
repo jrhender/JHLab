@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './../styles/Header.css';
 import jhFace from './../images/John-Face.png';
+import Flask from './../components/Flask.js';
 
 const Header = (props) => {
     return (
@@ -9,6 +10,7 @@ const Header = (props) => {
             <div id="LogoAndName">
                 <img src={jhFace} alt="logo" />
                 <h1>JH Code Lab</h1>
+                <Flask/>
             </div>
             <nav className="site-navigation">
                 <ul>

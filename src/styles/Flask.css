@@ -1,0 +1,199 @@
+/*html,body {
+	background-color: #E6E9EA;
+	text-align: center;
+}*/
+#flask {
+	width: 197px;
+	height: 230px;
+	margin: 0 auto;
+	margin-top: 200px;
+	position: relative;
+}
+#flask svg {
+	width: 200px;
+	height: 230px;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#flask .background {
+	width: 197px;
+	height: 100px;
+	background-color: #5BBCFC;
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: 0;
+	animation: liquid 3s infinite,liquid-color 80s infinite;
+}
+.bubble {
+	width: 40px;
+	height: 40px;
+	background: #5BBCFC;
+	border-radius: 40px;
+	position: absolute;
+	top: 180px;
+}
+
+
+@keyframes liquid {
+	0% {
+		height: 100px;
+	}
+	10% {
+		height: 97px;
+	}
+	35% {
+		height: 100px;
+	}
+	50% {
+		height: 102px;
+	}
+	80% {
+		height: 98px;
+	}
+	100% {
+		height: 100px;
+	}
+}
+@keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+
+@keyframes bubble {
+	0% {
+		top: 200px;
+	}
+	100% {
+		top: -200px;
+		opacity: 0;
+	}
+}
+@keyframes side {
+	0% {
+		margin-right: 0px;
+	}
+	100% {
+		margin-right: 35px;
+	}
+}
+
+
+
+.b1,.b2,.b3 {
+	right: 60px;
+	transform: scale(0.4);
+	opacity: 0.6;
+	animation: bubble 8s linear infinite, liquid-color 80s infinite, side 2s ease-in-out infinite alternate;
+}
+.b2 {
+	right: 65px;
+	transform: scale(0.5);
+	animation-delay: 2s,0s,2s;
+}
+.b3 {
+	right: 70px;
+	animation-delay: 5s,0s,5s;
+	animation: bubble 10s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate;
+}
+.b4,.b5 {
+	right: 65px;
+	transform: scale(0.5);
+	opacity: 0.8;
+	animation: bubble 16s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+	animation-delay: 4s,0s,4s;
+}
+.b5 {
+	right: 55px;
+	animation-delay: 5s,0s,5s;
+}
+.b6,.b7,.b8 {
+	right: 65px;
+	transform: scale(0.6);
+	opacity: 0.4;
+	animation: bubble 14s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate;
+	animation-delay: 9s,0s,9s;
+}
+.b7 {
+	right: 70px;
+	transform: scale(0.7);
+	animation-delay: 3s,0s,3s;
+}
+.b8 {
+	right: 65px;
+	animation-delay: 7s,0s,7s;
+}
+.b9,.b0 {
+	right: 70px;
+	transform: scale(0.65);
+	opacity: 0.7;
+	animation: bubble 20s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+}
+.b0 {
+	right: 60px;
+	animation-delay: 13s,0s,13s;
+}
+
+
+
+.swirl {
+	width: 20px;
+	height: 20px;
+	background: #5BBCFC;
+	border-radius: 20px;
+	position: absolute;
+	top: 140px;
+	left: 80px;
+}
+
+
+@keyframes swirl {
+	0% {
+		top: 140px;
+	}
+	100% {
+		top: 128px;
+	}
+}
+
+
+
+.s0 {
+	animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+}
+.s1 {
+	left: 100px;
+	transform: scale(1.2);
+	animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+	animation-delay: 0s,2s;
+}
+.s2 {
+	left: 40px;
+	transform: scale(0.8);
+	animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+	animation-delay: 0s,3s;
+}
+.s3 {
+	left: 60px;
+	transform: scale(1.4);
+	animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+	animation-delay: 0s,5s;
+}
+.s4 {
+	left: 120px;
+	animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+	animation-delay: 0s,3s;
+}
+.s5 {
+	left: 135px;
+	transform: scale(0.8);
+	animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+	animation-delay: 0s,2s;
+}

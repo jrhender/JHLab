@@ -53,7 +53,7 @@
   display: block;
   text-decoration: none;
   text-align: center;
-  padding: 1rem;
+  padding: 28.5px 1rem;
 }
 
 .site-navigation a:hover {
@@ -75,6 +75,13 @@
      */
     flex-flow: column wrap;
     padding: 0;
+  }
+
+    .site-navigation a {
+    /**
+     * Full width navigation items
+     */
+    padding: 1rem;
   }
 }
 
