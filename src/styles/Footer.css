@@ -13,7 +13,12 @@
 }
 
 .twitter-logo {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     margin-left: 5px;
+}
+
+.linkedin-logo {
+    margin-left: 5px;
+    height: 28px;
 }
