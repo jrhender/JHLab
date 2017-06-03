@@ -1,6 +1,5 @@
 .App-header {
   background-color: steelblue;
-  height: 75px;
   padding: 0px;
   color: white;
 
@@ -14,11 +13,10 @@
 
 .App-header h1 {
     margin: 10px;
-    /*flex-grow: 2;*/
 }
 
 .App-header img {
-    margin: 10px;
+    margin-right: 10px;
 }
 
  .App-header nav {
@@ -27,7 +25,7 @@
  }
 
  .App-header #LogoAndName {
-    flex-grow: 2;
+    flex-grow: 1;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -60,27 +58,16 @@
   background: #d4d4d4;
 }
 
-@media all and (max-width: 525px) {
-  .App-header {
+@media all and (max-width: 600px) {
     /**
-     * Full width navigation items
-     */
-    padding: 0;
-    height: 150px;
+    * Small width items
+    */
+    
+  .App-header {
+    display: block;
   }
   
-  .site-navigation ul {
-    /**
-     * Full width navigation items
-     */
-    flex-flow: column wrap;
-    padding: 0;
-  }
-
     .site-navigation a {
-    /**
-     * Full width navigation items
-     */
     padding: 1rem;
   }
 }
